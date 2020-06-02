@@ -39,4 +39,3 @@ def post(calls, headers, **kwargs):
 def delete(calls, headers, **kwargs):
     loop = asyncio.get_event_loop()
     return loop.run_until_complete(__async_call(__remove, calls, headers, **kwargs))
-
