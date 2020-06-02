@@ -22,6 +22,11 @@ def post(calls, headers, **kwargs)
 ```python
 def delete(calls, headers, **kwargs)
 ```
+They all return the same thing
+
+```python
+[response.text(), response.status]
+```
 
 <b>Calls</b> is a list of the urls to request. In case of put/post you need to provide a tuple (url, data):
 ```python
