@@ -1,6 +1,7 @@
 # aiohttphelper
 
 ![PyPI](https://img.shields.io/pypi/v/aiohttphelper)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/aiohttphelper)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aiohttphelper)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gregorybarille/aiohttphelper)
 ![license](https://img.shields.io/npm/l/redux-saga-testable)
