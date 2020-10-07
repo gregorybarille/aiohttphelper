@@ -50,8 +50,13 @@ aiohttphelper.delete(calls, headers, **kwargs)
 aiohttphelper.put((url, data), headers, **kwargs)
 ````
 
-They all return the same thing:
-[An aiohttp Response](https://docs.aiohttp.org/en/stable/client_reference.html#response-object)
+They all return the same thing, a list of SimpleNamespace objects with the following attributes:
+```python
+object.url
+object.status
+object.text
+````
+If there's just one call it won't be a list.
 
 As it's build in top of aiohttp **kwargs is used to pass parameters to the request.
 Look at the [documentation](https://docs.aiohttp.org/en/stable/) for more details.
