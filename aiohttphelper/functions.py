@@ -13,8 +13,6 @@ def __transform_results(results):
     new_results = []
     for result in results:
         new_results.append(__list_to_namespace(result))
-    if len(new_results) == 1:
-        new_results = new_results[0]
     return new_results
 
 
