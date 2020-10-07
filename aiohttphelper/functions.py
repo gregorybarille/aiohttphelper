@@ -6,7 +6,7 @@ def __list_to_namespace(data):
     obj = SimpleNamespace()
     obj.text = data[0]
     obj.status = data[1]
-    obj.url = data[2]
+    obj.url = str(data[2])
     return obj
 
 def __transform_results(results):
