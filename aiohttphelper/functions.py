@@ -3,19 +3,19 @@ import aiohttp
 
 async def __fetch(session, call, headers, **kwargs):
     async with session.get(call, headers=headers, **kwargs) as response:
-        return await response
+        return response
 
 async def __update(session, call, headers, **kwargs):
     async with session.put(call[0], headers=headers, data=call[1], **kwargs) as response:
-        return await response
+        return response
         
 async def __create(session, call, headers, **kwargs):
     async with session.post(call[0], headers=headers, data=call[1], **kwargs) as response:
-        return await response
+        return response
 
 async def __remove(session, call, headers, **kwargs):
     async with session.get(call, headers=headers, **kwargs) as response:
-        return await response
+        return response
 
 async def __async_call(method, calls, headers, **kwargs):
     async with aiohttp.ClientSession(raise_for_status=True) as session:

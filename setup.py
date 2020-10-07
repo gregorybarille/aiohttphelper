@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="aiohttphelper", # Replace with your own username
-    version="2.0.0",
+    version="2.0.1",
     author="Gregory Barillé",
     author_email="contact@gregorybarille.io",
     description="Simple wrapper for aiohttp. Designed for my own use but might be useful to others.",
